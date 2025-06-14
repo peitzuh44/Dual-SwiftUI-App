@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DualApp: App {
+    @StateObject private var supabaseManager = SupabaseManager.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(supabaseManager)
         }
     }
 }

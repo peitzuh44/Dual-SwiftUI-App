@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		88A95FD92DFD458C00F0638A /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 88A95FD82DFD458C00F0638A /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		88A95F962DFD2B7C00F0638A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A95FD92DFD458C00F0638A /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Dual;
 			packageProductDependencies = (
+				88A95FD82DFD458C00F0638A /* Supabase */,
 			);
 			productName = Dual;
 			productReference = 88A95F842DFD2B7500F0638A /* Dual.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 88A95F7B2DFD2B7500F0638A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				88A95FD72DFD458C00F0638A /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 88A95F852DFD2B7500F0638A /* Products */;
 			projectDirPath = "";
@@ -591,6 +600,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88A95FD72DFD458C00F0638A /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88A95FD82DFD458C00F0638A /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88A95FD72DFD458C00F0638A /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 88A95F7C2DFD2B7500F0638A /* Project object */;
 }
